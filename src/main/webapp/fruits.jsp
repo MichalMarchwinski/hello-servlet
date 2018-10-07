@@ -14,8 +14,10 @@
 <body>
 Fruits:
 <br/>
-<c:forEach var="fruit" items="${fruits}">
-    <c:out value="${fruit}"/>
+<ol>
+<c:forEach var="fruit" items="${fruits}" varStatus="status">
+    <li> <c:out value="${fruit}"/> </li>
 </c:forEach>
+</ol>
 </body>
 </html>
